@@ -1,0 +1,19 @@
+@media screen and (max-width: 850px) {
+    .start-page .question-mark {
+        width: 8rem;
+        height: 8rem;
+        top: 15rem;
+    }
+    .start-page .left-side {
+        top: 17rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .start-page .question-mark {
+        width: 5rem;
+        height: 5rem;
+    }
+}

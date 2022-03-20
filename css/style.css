@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+body {
+    /* background-image: url('../images/bgc\ image.webp');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #240046;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Lobster', cursive;
+    
+}
+.main {
+    width: 45rem;
+    border-radius: 20px;
+    position: relative;
+    background-color: #240046;
+    margin: 10rem auto;
+}
+.start-page  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* display: none; */
+}
+h1 {
+    color: white;
+    font-size: 5rem;
+    margin-top: 10%;
+}
+.start-page .start {
+    margin-top: 4rem;
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+    fill: white;
+    transition: 0.3s;
+    z-index: 1;
+}
+.start-page .start:hover {
+    transform: scale(1.1);
+}
+.start-page .question-mark {
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    right: 2rem;
+    top: 10rem;
+    fill: #38b000;
+}
+.start-page .left-side {
+    width: 10rem;
+    height: 10rem;
+    transform: rotate(135deg);
+    left: 4rem;
+    top: 7rem;
+    fill: #db222a;
+}
+.questions-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+.first-question {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.question-container {
+    margin-top: 5%;
+    width: 38rem;
+    height: 7rem;
+    padding: 2rem;
+    border-radius: 25px;
+    color: white;
+    font-size: 17px;
+    background-color: #00296b;
+    box-shadow: 0 0 5px 1px ;
+}
+.question-container p {
+    text-align: center;
+}
+.answers {
+    width: 38rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin: 2rem 0;
+    padding: 20px 0;
+    
+}
+.btn {
+    width: 18.5rem;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    background-color: #00296b;
+    font-family: 'Lobster', cursive;
+}
+.background-color{
+    background-color: #fb8b24;
+}
+#next {
+    position: absolute;
+    color: white;
+    padding: 40px;
+    left: 50%;
+    cursor: pointer;
+    display: none;
+}
+.correct {
+    background-color: #38b000;
+}
+.wrong {
+    background-color: #db222a;
+}
