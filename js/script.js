@@ -19,14 +19,21 @@ start.addEventListener('click', ()=> {
 
 
 next.addEventListener('click', ()=> {
-    currentQuestionIndex++;
-    nextQuestion();
+    
+    if (shuffledQuestions.length > currentQuestionIndex +1) {
+        currentQuestionIndex++;
+        nextQuestion(); 
+    }else {
+        questionsPage.style.display = 'none';
+        next.style.display = 'none';
+        startPage.style.display = 'flex';
+        document.body.style.backgroundColor = '#240046';
+    }
 })
-
 
 function nextQuestion() {
     reset();
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
 function showQuestion(question) {
