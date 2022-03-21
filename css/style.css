@@ -5,9 +5,6 @@
     text-transform: capitalize;
     
 }
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-
 body {
     /* background-image: url('../images/bgc\ image.webp');
     background-repeat: no-repeat;
@@ -15,7 +12,7 @@ body {
     background-color: #240046;
     height: 100vh;
     overflow: hidden;
-    font-family: 'Lobster', cursive;
+    font-family: 'Domine', serif;
     
 }
 .main {
@@ -109,8 +106,8 @@ h1 {
     border: 0;
     color: white;
     background-color: #00296b;
-    font-family: 'Lobster', cursive;
     margin: auto;
+    font-family: 'Domine', serif;
 }
 .background-color{
     background-color: #fb8b24;
